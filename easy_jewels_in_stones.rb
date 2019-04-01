@@ -3,16 +3,14 @@
 # The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
 def num_jewels_in_stones(j, s)
-    total_jewels = 0
-    s.length.times do |stone|
-        j.length.times do |jewel|
-            if j[jewel] == s[stone]
-                total_jewels += 1
-            end
-        end
+  total_jewels = 0
+  s.length.times do |stone|
+    j.length.times do |jewel|
+      total_jewels += 1 if j[jewel] == s[stone]
     end
-    total_jewels
+  end
+  total_jewels
 end
 
-num_jewels_in_stones("aA", "aAAbbBbb")
-num_jewels_in_stones("z", "zZZzzaaZZ")
+num_jewels_in_stones('aA', 'aAAbbBbb')
+num_jewels_in_stones('z', 'zZZzzaaZZ')
