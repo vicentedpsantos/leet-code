@@ -3,7 +3,9 @@
 # Note:
 #
 # The number of elements initialized in nums1 and nums2 are m and n respectively.
-# You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2.
+# You may assume that nums1 has enough space (size that is greater or equal to
+# m + n) to hold additional elements from nums2.
+
 def merge(nums1, m, nums2, n)
   nums1.pop(nums1.length - m)
   nums2.pop(nums2.length - n)
