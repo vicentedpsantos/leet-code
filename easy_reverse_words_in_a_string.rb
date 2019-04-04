@@ -2,8 +2,7 @@
 # a sentence while still preserving whitespace and initial word order.
 
 def reverse_words(s)
-    arr = s.split(" ").map { |word| word.reverse! }
-    arr.join(' ')
+    s.split(" ").map { |word| word.reverse! }.join(' ')
 end
 
 reverse_words('Let\'s fart this place up')

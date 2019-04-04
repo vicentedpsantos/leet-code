@@ -20,8 +20,7 @@
 # How many different addresses actually receive mails?
 
 def num_unique_emails(emails)
-    arr = emails.map { |email| email.partition('@').map.with_index { |c, i| i == 0 ? c.gsub(/\.|\+(.*)/, '') : c  }.join('') }
-    arr.uniq.length
+    arr = emails.map { |email| email.partition('@').map.with_index { |c, i| i == 0 ? c.gsub(/\.|\+(.*)/, '') : c  }.join('') }.uniq.length
 end
 
 num_unique_emails(["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"])
