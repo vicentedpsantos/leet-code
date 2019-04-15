@@ -22,7 +22,6 @@
 # s will only consist of "0" or "1" characters.
 
 def count_binary_substrings(s)
-  return 0 if s.length == 2 && ((s[0] == '0' && s[1] == '0') || (s[0] == '1' && s[1] == '1'))
   cur = 0
   pre = 0
   res = 0
@@ -37,7 +36,7 @@ def count_binary_substrings(s)
     end
   end
 
-  res + [cur, pre].min
+  p res + [cur, pre].min
 end
 
 count_binary_substrings('00110011') #=> 6
