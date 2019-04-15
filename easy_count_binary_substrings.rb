@@ -40,9 +40,9 @@ def count_binary_substrings(s)
   res + [cur, pre].min
 end
 
-# count_binary_substrings('00110011') #=> 6
-# count_binary_substrings('10101') #=> 4
-# count_binary_substrings('0110001111')
-# count_binary_substrings('111000') #=> 3
-# count_binary_substrings('00') #=> 0
+count_binary_substrings('00110011') #=> 6
+count_binary_substrings('10101') #=> 4
+count_binary_substrings('0110001111')
+count_binary_substrings('111000') #=> 3
+count_binary_substrings('00') #=> 0
 count_binary_substrings('00100') #=> 2
