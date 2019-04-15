@@ -48,5 +48,3 @@ license_key_formatting('a0001afds-', 4)
 license_key_formatting('---', 3)
 license_key_formatting('--------EyRfCyHxyUJzhygiazYpjuDFdHvrnDwoQKQEsccLDiwhpmjueADIzqIvExbDDFnEGovAxYeszbzuTekRuWUPXRPbVKJuDQzIzzTj', 16)
 license_key_formatting('--------deshjILmadJYXzvTbSEmqIlBBxJpTGETBwEmSfuIwPDAEBTFdNxybaeFpxaejhVgmEWcLYAFoHsnDTeEsFKocOnXkJjboETGIQJd', 15)
-
-# str.insert(i, '-') if (i.to_f * groups) / groups == k.to_f / groups
