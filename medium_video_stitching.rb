@@ -23,14 +23,13 @@
 # Now we have segments [0,2] + [2,8] + [8,10] which cover the sporting event [0, 10].
 
 def video_stitching(clips, t)
-  return -1 if clips.max.max < t
-  return -1 if clips.min.min > 0
+  return -1 if clips.max.max < t || clips.min.min > 0
   return (t / clips.min.max) if clips.map{ |clip| clip[1] - clip[0] }.uniq.length == 1
 
   stitched = []
-  (0..t).each {|t| stitched[t] = nil }
+  (0..t).each { |t| stitched[t] = nil }
 
-  (0..100).each do
+  (0..t).each do
     break unless stitched.include?(nil)
     chosen = try_candidates(stitched, clips)
     start = clips[chosen][0]
