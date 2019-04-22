@@ -13,17 +13,17 @@
 
 
 def judge_circle(moves)
-    vertical = 0
-    horizontal = 0
-    movement_points = { "U" => 1, "D" => -1, "L" => -1, "R" => 1 }
+  vertical = 0
+  horizontal = 0
+  movement_points = { "U" => 1, "D" => -1, "L" => -1, "R" => 1 }
 
-    moves.length.times do |i|
-        vertical += movement_points[moves[i]] if moves[i] == 'U' || moves[i] == 'D'
-        horizontal += movement_points[moves[i]] if moves[i] == 'L' || moves[i] == 'R'
-    end
+  moves.length.times do |i|
+    vertical += movement_points[moves[i]] if moves[i] == 'U' || moves[i] == 'D'
+    horizontal += movement_points[moves[i]] if moves[i] == 'L' || moves[i] == 'R'
+  end
 
-    return true if vertical == 0 && horizontal == 0
-    return false
+  return true if vertical == 0 && horizontal == 0
+  return false
 end
 
 judge_circle("UUD")
