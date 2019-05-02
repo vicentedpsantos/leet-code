@@ -1,4 +1,4 @@
 ### Saving code challenges
-leetcode.com [https://leetcode.com/]
+[https://leetcode.com/]
 
-- The idea here is to start from the easy ones and climb up :)
+```One leet code challenge a day keeps unemployment away``` - Marley, Bob (Never)
