@@ -23,9 +23,7 @@
 # Only letters from a ~ z will appear in input strings.
 
 def find_lu_slength(a, b)
-  return -1 if a == b
-
-  [a.length, b.length].max
+  a == b ? -1 : [a.length, b.length].max
 end
 
 p find_lu_slength("aba", "adc")
